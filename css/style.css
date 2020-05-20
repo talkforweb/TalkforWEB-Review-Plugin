@@ -1,0 +1,71 @@
+.tfw_container {
+  width: calc(100% - 20px);
+  max-width: 325px;
+  height: 80px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  overflow: hidden;
+  color: #404040;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  opacity: 1;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, .15);
+  transition: all .3s ease-in;
+  z-index: 999;
+}
+
+.tfw_logoimg img {
+  max-width: 55px;
+}
+
+.ngrcard {
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 10px 0 10px;
+}
+
+.ngrcard span {
+  width: 100%;
+  line-height: 14px;
+  font-size: 11px;
+}
+
+.ngrcard .name {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.ngrcard .authorimg {
+  width: 20%;
+}
+
+.authorimg img {
+  width: 50px;
+}
+
+.tfw_logoimg {
+  margin-bottom: -7px;
+}
+
+.groupc {
+  margin-top: -15px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.ngrcard .text {
+  height: 30px;
+  overflow-y: scroll;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.ngrcard .rating img {
+  width: 5%;
+}
