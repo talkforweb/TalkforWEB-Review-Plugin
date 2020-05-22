@@ -1,4 +1,4 @@
-=== Google Reviews===
+=== Review Plugin ===
 Contributors: vinay
 Tags: Google, reviews, Google Places reviews
 Tested up to: 5.4.1

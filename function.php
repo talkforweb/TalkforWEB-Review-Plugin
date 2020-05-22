@@ -2,7 +2,7 @@
 
 function talkforweb_get_page($page)
 {
-    $file = esc_attr(get_option('tfw_google_place_id'));
+    $file = esc_attr(get_option('talforweb_place_id'));
     preg_match('/2m2!(.*?)!/', $file, $match);
     return str_replace($match[1], $page, $file);
 }
@@ -11,7 +11,7 @@ function talkforweb_save_data($data)
 {
 
     global $wpdb;
-    $table = $wpdb->prefix . 'talforweb_google_review';
+    $table = $wpdb->prefix . 'talforweb_review';
 
     $data = array(
         'user_id' => $data['user_id'],
@@ -40,9 +40,9 @@ function talkforweb_save_data($data)
 function talkforweb_add_review()
 {
 
-    $variable = talkforweb_read_google_review();
+    $variable = talkforweb_read_review();
     global $wpdb;
-    $table = $wpdb->prefix . 'talforweb_google_review';
+    $table = $wpdb->prefix . 'talforweb_review';
     $wpdb->query('TRUNCATE TABLE ' . $table);
 
     foreach ($variable[2] as $key => $value)
@@ -63,7 +63,7 @@ function talkforweb_add_review()
 
 }
 
-function talkforweb_read_google_review()
+function talkforweb_read_review()
 {
 
     //passing pagination dummy value as paramater
