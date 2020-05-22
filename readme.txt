@@ -7,7 +7,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-To get all phical or non physical address google places reviews
+To get all physical or non physical address google places reviews
 
 
 = Plugin Features =
